@@ -19,8 +19,11 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook-old": "build-storybook -s public",
-    "bv": "node ./custom_modules/sb_versioning/build-sb-version"
+    "build-sb-version": "node ./custom_modules/sb_versioning/build-sb-version --dev",
+    "build-sb-version-new": "node ./custom_modules/sb_versioning/build-sb-version --new",
+    "build-sb-version-override": "node ./custom_modules/sb_versioning/build-sb-version --override"
   },
+  "sb-version": "0.0.4",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -61,6 +64,7 @@
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "colors": "^1.4.0",
     "prop-types": "^15.8.1",
     "webpack": "^5.73.0"
   }

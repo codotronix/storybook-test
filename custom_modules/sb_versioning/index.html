@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        This file will be placed at the /dist folder
+        to route/redirect incoming path ahead to one of the storybook implementation
+     -->
+     <p style="padding: 10px 15px;">
+        If you are not automatically redirected, please 
+        <a id="redirct" href="/dist/dev">click here</a>
+     </p>
+
+     <script>
+        (function(){
+            document.getElementById('redirct').click()
+        })()
+     </script>
+</body>
+</html>
